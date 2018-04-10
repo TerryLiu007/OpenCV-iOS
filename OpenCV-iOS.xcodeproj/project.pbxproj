@@ -12,7 +12,6 @@
 		6AB794D020244167008B3B33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB794CF20244167008B3B33 /* AppDelegate.swift */; };
 		6AB794D220244167008B3B33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB794D120244167008B3B33 /* ViewController.swift */; };
 		6AB794D520244167008B3B33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AB794D320244167008B3B33 /* Main.storyboard */; };
-		6AB794D720244167008B3B33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AB794D620244167008B3B33 /* Assets.xcassets */; };
 		6AB794DA20244167008B3B33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AB794D820244167008B3B33 /* LaunchScreen.storyboard */; };
 		6AB794E5202441DA008B3B33 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB794E4202441DA008B3B33 /* AssetsLibrary.framework */; };
 		6AB794E7202441E7008B3B33 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB794E6202441E7008B3B33 /* CoreGraphics.framework */; };
@@ -20,6 +19,7 @@
 		6AB794EB202441F6008B3B33 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB794EA202441F6008B3B33 /* CoreFoundation.framework */; };
 		6AB794ED202441FF008B3B33 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB794EC202441FF008B3B33 /* Accelerate.framework */; };
 		6AB794F120244495008B3B33 /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6AB794F020244495008B3B33 /* OpenCVWrapper.mm */; };
+		6AFDF2092033D62400531B64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AFDF2082033D62400531B64 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,6 @@
 		6AB794CF20244167008B3B33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6AB794D120244167008B3B33 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6AB794D420244167008B3B33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6AB794D620244167008B3B33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AB794D920244167008B3B33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6AB794DB20244167008B3B33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6AB794E4202441DA008B3B33 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
@@ -41,6 +40,7 @@
 		6AB794EF20244495008B3B33 /* OpenCVWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
 		6AB794F020244495008B3B33 /* OpenCVWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
 		6AB794F220244585008B3B33 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		6AFDF2082033D62400531B64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +86,8 @@
 				6AB794CF20244167008B3B33 /* AppDelegate.swift */,
 				6AB794D120244167008B3B33 /* ViewController.swift */,
 				6AB794D320244167008B3B33 /* Main.storyboard */,
-				6AB794D620244167008B3B33 /* Assets.xcassets */,
 				6AB794D820244167008B3B33 /* LaunchScreen.storyboard */,
+				6AFDF2082033D62400531B64 /* Assets.xcassets */,
 				6AB794DB20244167008B3B33 /* Info.plist */,
 				6AB794EE20244495008B3B33 /* OpenCV-iOS-Bridging-Header.h */,
 				6A687A34202959D500913139 /* ShowRoundedButton.swift */,
@@ -169,7 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AB794DA20244167008B3B33 /* LaunchScreen.storyboard in Resources */,
-				6AB794D720244167008B3B33 /* Assets.xcassets in Resources */,
+				6AFDF2092033D62400531B64 /* Assets.xcassets in Resources */,
 				6AB794D520244167008B3B33 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,6 +321,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SVWQN448NP;
@@ -342,6 +343,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SVWQN448NP;

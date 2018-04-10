@@ -18,38 +18,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="baB-wH-Xqg">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="baB-wH-Xqg">
+                                <rect key="frame" x="7" y="57" width="360" height="480"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fD-sd-lzd">
-                                <rect key="frame" x="84" y="634" width="206" height="21"/>
+                                <rect key="frame" x="85" y="630" width="206" height="20"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WkW-Lv-JrP" customClass="ShowRoundedButton" customModule="OpenCV_iOS" customModuleProvider="target">
-                                <rect key="frame" x="104" y="590" width="167" height="30"/>
+                                <rect key="frame" x="225" y="570" width="110" height="30"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Detect Feature">
+                                <state key="normal" title="Detect">
                                     <color key="titleShadowColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="ButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kJG-eU-zqo"/>
+                                    <action selector="DetectObject:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lkC-Oy-wId"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fg1-fR-V3G" customClass="ShowRoundedButton" customModule="OpenCV_iOS" customModuleProvider="target">
+                                <rect key="frame" x="40" y="570" width="110" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Define"/>
+                                <connections>
+                                    <action selector="DefineObject:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qJB-9H-V6k"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ci9-Jx-pbF" customClass="ShowRoundedButton" customModule="OpenCV_iOS" customModuleProvider="target">
+                                <rect key="frame" x="73" y="630" width="230" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="CVFunctionSelect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Xd-do-ddQ"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="baB-wH-Xqg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1wq-lb-vIf"/>
-                            <constraint firstItem="baB-wH-Xqg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1wu-vV-x3p"/>
-                            <constraint firstItem="baB-wH-Xqg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ZWP-UP-q1N"/>
-                            <constraint firstItem="baB-wH-Xqg" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="m37-Kb-EZ5"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
